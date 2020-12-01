@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_markdown/flutter_markdown.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(MyApp());
@@ -63,7 +64,10 @@ class _MyHomePageState extends State<MyHomePage> {
               if (!snapshot.hasData) {
                 return Text('Loading Markdown Info...');
               }
-              return Markdown(data: snapshot.data);
+              return Markdown(
+                data: snapshot.data,
+                selectable: true,
+              );
             },
           ),
         ),
