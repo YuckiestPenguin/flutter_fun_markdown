@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter_markdown/flutter_markdown.dart';
 
 void main() {
   runApp(MyApp());
@@ -56,7 +57,15 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Center(
-          child: Text('My Markdown data will go here!'),
+          child: FutureBuilder(
+            future: getFileData('assets/markdown_source_data.md'),
+            builder: (context, snapshot) {
+              if (!snapshot.hasData) {
+                return Text('Loading Markdown Info...');
+              }
+              return Markdown(data: snapshot.data);
+            },
+          ),
         ),
       ),
     );
