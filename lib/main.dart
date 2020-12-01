@@ -42,6 +42,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  // Method that will read the local file in your project. Path for us will be the ASSETS folder at the root level of the application
+  Future<String> getFileData(String path) async {
+    return await rootBundle.loadString(path);
+  }
 
   @override
   Widget build(BuildContext context) {
