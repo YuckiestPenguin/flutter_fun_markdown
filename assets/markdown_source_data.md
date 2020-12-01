@@ -1,35 +1,10 @@
-  Name  | Favorite Color
-  ------------- | -------------
-  Rooney  | Red
-  Fred  | Blue
-  Lisa  | Yellow
-  Kyle  | Maroon
-  Sammy  | Blue
-  Rooney  | Red
-  Fred  | Blue
-  Lisa  | Yellow
-  Kyle  | Maroon
-  Sammy  | Blue
-  Rooney  | Red
-  Fred  | Blue
-  Lisa  | Yellow
-  Kyle  | Maroon
-  Sammy  | Blue
-  Rooney  | Red
-  Fred  | Blue
-  Lisa  | Yellow
-  Kyle  | Maroon
-  Sammy  | Blue
-  Rooney  | Red
-  Fred  | Blue
-  Lisa  | Yellow
-  Kyle  | Maroon
-  Sammy  | Blue
-  Rooney  | Red
-  Fred  | Blue
-  Lisa  | Yellow
-  Kyle  | Maroon
-  Sammy  | Blue
+Name  | Favorite Color
+------------- | -------------
+Rooney  | Red
+Fred  | Blue
+Lisa  | Yellow
+Kyle  | Maroon
+Sammy  | Blue
   
   ---
 
